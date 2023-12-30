@@ -1,0 +1,46 @@
+.imgcap{
+    width: 50px;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 20px
+}
+
+.new{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.courses-card{
+    width: 300px;
+    border-color: grey;
+    border-style: solid;
+    border-radius: 15px;
+padding: 15px;
+    margin: 10px;
+}
+.newcours{
+    border-style: none;
+    background-color: lightgray;
+    border-radius: 25px;
+    color: black;
+    padding: 5px;
+}
+.date{
+    color: lightgray;
+}
+.location{
+    color: lightgray;
+}
+.courses-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+
+}
+
+
+
+
+
