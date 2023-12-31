@@ -1,4 +1,3 @@
-// components/Courses.jsx
 import React from 'react';
 
 const coursesData = [
@@ -59,12 +58,14 @@ const Course = ({ course }) => {
     return (
         <div className="courses-card">
             <div className="new">
-            <h2>{name}</h2>
-            {isNew && <p className="newcours"><b>New!</b></p>}</div>
+                <h2>{name}</h2>
+                {isNew && <p className="newcours"><b>New!</b></p>}</div>
             <p className="location">Location: {location}</p>
             <p className="date">Date: {new Date(date).toLocaleDateString()}</p>
 
-            <button>Enroll</button>
+            <button onClick={() => alert(`Enroll in ${name}`)}>
+                Enroll
+            </button>
             <p>🧍Speaker: {speaker}</p>
 
 
@@ -76,7 +77,7 @@ export const CourseList = () => {
     return (
 
         <div className="courses-container">
-                {coursesData.map((course, index) => (
+        {coursesData.map((course, index) => (
                     <Course key={index} course={course} />
                 ))}
             </div>
