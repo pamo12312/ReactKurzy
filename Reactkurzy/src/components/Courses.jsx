@@ -59,12 +59,12 @@ const Course = ({ course }) => {
         <div className="courses-card">
             <div className="new">
                 <h2>{name}</h2>
-                {isNew && <p className="newcours"><b>New!</b></p>}</div>
+                {isNew && <p className="newcours"><b>New</b></p>}</div>
             <p className="location">Location: {location}</p>
             <p className="date">Date: {new Date(date).toLocaleDateString()}</p>
 
-            <button onClick={() => alert(`Enroll in ${name}`)}>
-                Enroll
+            <button className="button" onClick={() => alert(`Enroll in ${name}`)}>
+              <b> Enroll</b>
             </button>
             <p>🧍Speaker: {speaker}</p>
 
