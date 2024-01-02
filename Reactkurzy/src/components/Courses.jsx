@@ -1,4 +1,4 @@
-
+import { Button } from './Button.jsx';
 
 const coursesData = [
     {
@@ -62,10 +62,8 @@ const Course = ({ course }) => {
                 {isNew && <p className="newcours"><b>New</b></p>}</div>
             <p className="location">Location: {location}</p>
             <p className="date">Date: {new Date(date).toLocaleDateString()}</p>
+            <Button name={name} />
 
-            <button className="button" onClick={() => alert(`Enroll in ${name}`)}>
-              <b> Enroll</b>
-            </button>
             <p>🧍Speaker: {speaker}</p>
 
 
