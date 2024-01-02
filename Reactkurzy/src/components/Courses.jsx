@@ -1,5 +1,5 @@
 import { Button } from './Button.jsx';
-
+import { New } from './New.jsx';
 const coursesData = [
     {
         "name": "Course 1",
@@ -59,7 +59,8 @@ const Course = ({ course }) => {
         <div className="courses-card">
             <div className="new">
                 <h2>{name}</h2>
-                {isNew && <p className="newcours"><b>New</b></p>}</div>
+                <New isNew={isNew} />
+              </div>
             <p className="location">Location: {location}</p>
             <p className="date">Date: {new Date(date).toLocaleDateString()}</p>
             <Button name={name} />
